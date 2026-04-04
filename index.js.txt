@@ -1,23 +1,51 @@
+require('dotenv').config();           // Carga variables de entorno
 const { Client, GatewayIntentBits } = require('discord.js');
+const express = require("express");
 
-const client = new Client({
-  intents: [
-    GatewayIntentBits.Guilds,
-    GatewayIntentBits.GuildMessages,
-    GatewayIntentBits.MessageContent
-  ]
-});
+// ----------------------
+// Discord Bot
+// ----------------------
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 
 client.once('ready', () => {
   console.log(`Bot conectado como ${client.user.tag}`);
 });
 
 client.on('messageCreate', message => {
-  if (message.content === '!hola') {
-    message.reply('Hola, soy La Mano de Plata 👊');
+  const msg = message.content.toLowerCase(); // Comandos no sensibles a mayúsculas
+
+  // COMANDOS
+  if (msg === '!dc') {
+    message.reply('Únete a nuestro Discord:\nhttps://discord.gg/hDzSYR9erM');
   }
+
+  if (msg === '!wsp') {
+    message.reply('Grupo de WhatsApp:\nhttps://chat.whatsapp.com/F0NvVPFr6FBFQqPyVZNCMk');
+  }
+
+  if (msg === '!hola') {
+  message.reply('Hola, soy La Mano de Plata', {
+    files: ['https://i.postimg.cc/7GQxRb8n/mano-real.png']
+  });
+  }
+
+  // Aquí puedes agregar más comandos fácilmente
 });
 
-require('dotenv').config();
-
+// Login con token seguro desde .env o Environment de Render
 client.login(process.env.TOKEN);
+
+// ----------------------
+// Mini servidor Express para Render
+// ----------------------
+const app = express();
+
+// Endpoint para mantener el bot activo
+app.get("/", (req, res) => {
+  res.send("Bot activo ✅");
+});
+
+// Render asigna un puerto dinámico vía environment variable
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => console.log(`Servidor Express activo en puerto ${PORT}`));
