@@ -1,57 +1,50 @@
-client.login(process.env.TOKEN);           // Carga variables de entorno
+require('dotenv').config();
+
 const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
 const express = require("express");
 
-// ----------------------
-// Discord Bot
-// ----------------------
-const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
+// 1. Crear cliente PRIMERO
+const client = new Client({
+  intents: [
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.MessageContent
+  ]
+});
 
+// 2. Eventos
 client.once('clientReady', () => {
   console.log(`Bot conectado como ${client.user.tag}`);
 });
 
 client.on('messageCreate', message => {
-  const msg = message.content.toLowerCase(); // Comandos no sensibles a mayúsculas
+  if (message.author.bot) return;
 
-  // COMANDOS
-  if (msg === '!dc') {
-    message.reply('Únete a nuestro Discord:\nhttps://discord.gg/hDzSYR9erM');
-  }
-
-  if (msg === '!wsp') {
-    message.reply('Grupo de WhatsApp:\nhttps://chat.whatsapp.com/F0NvVPFr6FBFQqPyVZNCMk');
-  }
+  const msg = message.content.toLowerCase();
 
   if (msg === '!hola') {
+    const embed = new EmbedBuilder()
+      .setColor(0x3498db)
+      .setTitle('👋 Bienvenido a La Mano de Plata')
+      .setThumbnail('https://i.imgur.com/AKXElX0.png')
+      .setFooter({ text: 'Hermandad La Mano de Plata' });
 
-  const embed = new EmbedBuilder()
-    .setColor(0x3498db) // azul elegante
-    .setTitle('👋 Bienvenido a La Mano de Plata')
-    .setDescription('Saludos aventurero.\nPrepárate para la batalla ⚔️')
-    .setThumbnail('https://i.imgur.com/AKXElX0.png')
-    .setFooter({ text: 'Hermandad La Mano de Plata' });
-
-  message.reply({ embeds: [embed] });
-}
-
-  // Aquí puedes agregar más comandos fácilmente
+    message.reply({ embeds: [embed] });
+  }
 });
 
-// Login con token seguro desde .env o Environment de Render
+// 3. LOGIN SIEMPRE AL FINAL (del bot)
 client.login(process.env.TOKEN);
 
 // ----------------------
-// Mini servidor Express para Render
+// Express (Render)
 // ----------------------
 const app = express();
 
-// Endpoint para mantener el bot activo
 app.get("/", (req, res) => {
   res.send("Bot activo ✅");
 });
 
-// Render asigna un puerto dinámico vía environment variable
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => console.log(`Servidor Express activo en puerto ${PORT}`));
