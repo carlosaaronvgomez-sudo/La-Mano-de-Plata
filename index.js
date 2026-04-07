@@ -22,11 +22,17 @@ client.on('messageCreate', message => {
     message.reply('Grupo de WhatsApp:\nhttps://chat.whatsapp.com/F0NvVPFr6FBFQqPyVZNCMk');
   }
 
-  if (msg === '!hola') {
-  message.reply('Hola, soy La Mano de Plata', {
-    files: ['https://i.postimg.cc/7GQxRb8n/mano-real.png']
-  });
-  }
+if (msg === '!hola') {
+
+  const embed = new EmbedBuilder()
+    .setColor(0x3498db) // azul elegante
+    .setTitle('👋 Bienvenido a La Mano de Plata')
+    .setDescription('Saludos aventurero.\nPrepárate para la batalla ⚔️')
+    .setThumbnail('https://i.imgur.com/AKXElX0.png')
+    .setFooter({ text: 'Hermandad La Mano de Plata' });
+
+  message.reply({ embeds: [embed] });
+}
 
   // Aquí puedes agregar más comandos fácilmente
 });
