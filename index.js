@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
+const { Client, GatewayIntentBits } = require('discord.js');
 const express = require("express");
 
 // 1. Crear cliente PRIMERO
@@ -20,11 +20,20 @@ client.on('messageCreate', message => {
 
   const msg = message.content.toLowerCase();
 
-if (msg === '!hola') { 
+  // COMANDO DC
+  if (msg === '!dc') {
+    message.reply('Únete a nuestro Discord:\nhttps://discord.gg/hDzSYR9erM');
+  }
 
-  message.reply('Bienvenido a La Mano de Plata 👊 ');
+  // COMANDO WSP
+  if (msg === '!wsp') {
+    message.reply('Grupo de WhatsApp:\nhttps://chat.whatsapp.com/F0NvVPFr6FBFQqPyVZNCMk');
+  }
 
-}
+  // COMANDO HOLA
+  if (msg === '!hola') { 
+    message.reply('Bienvenido a La Mano de Plata 👊');
+  }
 
 });
 
