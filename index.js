@@ -32,7 +32,7 @@ client.on('messageCreate', message => {
 
   // COMANDO HOLA
   if (msg === '!hola') { 
-    message.reply('Bienvenido a La Mano de Plata 👊');
+    message.reply(`👊 Bienvenido a La Mano de Plata, ${message.author}`);
   }
 
 });
