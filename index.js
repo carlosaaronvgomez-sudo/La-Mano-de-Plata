@@ -22,13 +22,9 @@ client.on('messageCreate', message => {
 
 if (msg === '!hola') { 
 
-    message.reply('👋');
+  message.reply('Bienvenido a La Mano de Plata 👊 ');
 
-    message.channel.send({
-      stickers: ['1490933736907214859']
-    });
-
-  }
+}
 
 });
 
