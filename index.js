@@ -20,15 +20,13 @@ client.on('messageCreate', message => {
 
   const msg = message.content.toLowerCase();
 
-  if (msg === '!hola') {
-    const embed = new EmbedBuilder()
-      .setColor(0x3498db)
-      .setTitle('👋 Bienvenido a La Mano de Plata')
-      .setThumbnail('https://i.imgur.com/AKXElX0.png')
-      .setFooter({ text: 'Hermandad La Mano de Plata' });
+if (msg === '!hola') {
 
-    message.reply({ embeds: [embed] });
-  }
+  const embed = new EmbedBuilder()
+    .setImage('https://i.imgur.com/AKXElX0.png');
+
+  message.reply({ embeds: [embed] });
+}
 });
 
 // 3. LOGIN SIEMPRE AL FINAL (del bot)
