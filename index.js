@@ -20,13 +20,16 @@ client.on('messageCreate', message => {
 
   const msg = message.content.toLowerCase();
 
-if (msg === '!hola') {
+if (msg === '!hola') { 
 
-  const embed = new EmbedBuilder()
-    .setImage('https://i.imgur.com/AKXElX0.png');
+    message.reply('👋');
 
-  message.reply({ embeds: [embed] });
-}
+    message.channel.send({
+      stickers: ['1490933736907214859']
+    });
+
+  }
+
 });
 
 // 3. LOGIN SIEMPRE AL FINAL (del bot)
