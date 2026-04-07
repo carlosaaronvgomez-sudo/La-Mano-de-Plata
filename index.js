@@ -1,4 +1,5 @@
-const { Client, GatewayIntentBits } = require('discord.js');
+client.login(process.env.TOKEN);           // Carga variables de entorno
+const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
 const express = require("express");
 
 // ----------------------
@@ -6,7 +7,7 @@ const express = require("express");
 // ----------------------
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 
-client.once('ready', () => {
+client.once('clientReady', () => {
   console.log(`Bot conectado como ${client.user.tag}`);
 });
 
@@ -22,7 +23,7 @@ client.on('messageCreate', message => {
     message.reply('Grupo de WhatsApp:\nhttps://chat.whatsapp.com/F0NvVPFr6FBFQqPyVZNCMk');
   }
 
-if (msg === '!hola') {
+  if (msg === '!hola') {
 
   const embed = new EmbedBuilder()
     .setColor(0x3498db) // azul elegante
