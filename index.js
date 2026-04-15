@@ -39,6 +39,9 @@ client.on('messageCreate', message => {
   const guias = {
     '!cl-gue-pro': 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=prot',
     '!cl-gue-fur': 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=fury',
+    '!tbc-gue-pro': 'https://wowtbc.gg/bis-list/protection-warrior/',
+    '!tbc-gue-fur': 'https://wowtbc.gg/bis-list/fury-warrior/',
+    '!tbc-gue-arm': 'https://wowtbc.gg/bis-list/arms-warrior/',
     '!cl-bru': 'https://www.wowisclassic.com/en/best-in-slot/warlock/?phase=1&specialization=warlock',
     '!cl-cha-ele': 'https://www.wowisclassic.com/en/best-in-slot/shaman/?phase=1&specialization=elem',
     '!cl-cha-resto': 'https://www.wowisclassic.com/en/best-in-slot/shaman/?phase=1&specialization=resto',
