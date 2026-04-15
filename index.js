@@ -35,6 +35,37 @@ client.on('messageCreate', message => {
     message.reply(`Bienvenido a La Mano de Plata, ${message.author}`);
   }
 
+  // COMANDOS DE CLASES
+  const guias = {
+    '!cl-gue-pro': 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=prot',
+    '!cl-gue-fur': 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=fury',
+    '!cl-bru': 'https://www.wowisclassic.com/en/best-in-slot/warlock/?phase=1&specialization=warlock',
+    '!cl-cha-ele': 'https://www.wowisclassic.com/en/best-in-slot/shaman/?phase=1&specialization=elem',
+    '!cl-cha-resto': 'https://www.wowisclassic.com/en/best-in-slot/shaman/?phase=1&specialization=resto',
+    '!cl-cha-mejo': 'https://www.wowisclassic.com/en/best-in-slot/shaman/?phase=1&specialization=enhan',
+    '!cl-pica-daga': 'https://www.wowisclassic.com/en/best-in-slot/rogue/?phase=1&specialization=dagger',
+    '!cl-pica-espa': 'https://www.wowisclassic.com/en/best-in-slot/rogue/?phase=1&specialization=sword',
+    '!cl-sac-sag': 'https://www.wowisclassic.com/en/best-in-slot/priest/?phase=1&specialization=holy',
+    '!cl-sac-som': 'https://www.wowisclassic.com/en/best-in-slot/priest/?phase=1&specialization=shadow',
+    '!cl-pal-rep': 'https://www.wowisclassic.com/en/best-in-slot/paladin/?phase=1&specialization=ret',
+    '!cl-pal-pro': 'https://www.wowisclassic.com/en/best-in-slot/paladin/?phase=1&specialization=protection',
+    '!cl-pal-sag': 'https://www.wowisclassic.com/en/best-in-slot/paladin/?phase=1&specialization=heal',
+    '!cl-mag': 'https://www.wowisclassic.com/en/best-in-slot/mage/?phase=1',
+    '!cl-dru-oso': 'https://www.wowisclassic.com/en/best-in-slot/druid/?phase=1&specialization=tank',
+    '!cl-dru-gato': 'https://www.wowisclassic.com/en/best-in-slot/druid/?phase=1&specialization=cat',
+    '!cl-dru-equi': 'https://www.wowisclassic.com/en/best-in-slot/druid/?phase=1&specialization=balance',
+    '!cl-dru-resto': 'https://www.wowisclassic.com/en/best-in-slot/druid/?phase=1&specialization=resto',
+
+  };
+
+  if (guias[msg]) {
+    message.reply(
+      `${guias[msg]}\n\n` +
+      'Ten en cuenta que el enlace es solo una referencia del equipo (Pre-BiS/BiS) que deberías buscar. ' +
+      'Adáptalo según la fase en la que te encuentres.'
+    );
+  }
+
 });
 
 // 3. LOGIN SIEMPRE AL FINAL (del bot)
