@@ -37,14 +37,21 @@ client.on('messageCreate', message => {
 
   // COMANDOS DE CLASES
   const guias = {
-    '!cl-gue-pro': 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=prot',
-    '!cl-gue-fur': 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=fury',
-    '!tbc-gue-pro': 'https://wowtbc.gg/bis-list/protection-warrior/',
-    '!tbc-gue-fur': 'https://wowtbc.gg/bis-list/fury-warrior/',
-    '!tbc-gue-arm': 'https://wowtbc.gg/bis-list/arms-warrior/',
-    '!lk-gue-pro': 'https://wowtbc.gg/wotlk/bis-list/protection-warrior/',
-    '!lk-gue-fur': 'https://wowtbc.gg/wotlk/bis-list/fury-warrior/',
-    '!lk-gue-arm': 'https://wowtbc.gg/wotlk/bis-list/arms-warrior/',
+  '!gue-pro': {
+    Classic: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=prot',
+    The Burning Crusade: 'https://wowtbc.gg/bis-list/protection-warrior/',
+    Wrath of the Lich King: 'https://wowtbc.gg/wotlk/bis-list/protection-warrior/'
+  },
+  '!gue-fur': {
+    Classic: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=fury',
+    The Burning Crusade: 'https://wowtbc.gg/bis-list/fury-warrior/',
+    Wrath of the Lich King: 'https://wowtbc.gg/wotlk/bis-list/fury-warrior/'
+  },
+  '!gue-arm': {
+    The Burning Crusade: 'https://wowtbc.gg/bis-list/arms-warrior/',
+    Wrath of the Lich King: 'https://wowtbc.gg/wotlk/bis-list/arms-warrior/'
+  }
+};
     '!cl-bru': 'https://www.wowisclassic.com/en/best-in-slot/warlock/?phase=1&specialization=warlock',
     '!tbc-bru-afli': 'https://wowtbc.gg/bis-list/affliction-warlock/',
     '!tbc-bru-demo': 'https://wowtbc.gg/bis-list/demonology-warlock/',
