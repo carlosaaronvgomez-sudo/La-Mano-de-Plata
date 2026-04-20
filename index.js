@@ -182,15 +182,15 @@ client.on('messageCreate', message => {
   let respuesta = '';
 
   if (guia.Classic) {
-    respuesta += `Classic:\n<${guia.Classic}>\n\n`;
+    respuesta += `**World of Warcraft Classic:**\n<${guia.Classic}>\n\n`;
   }
 
   if (guia.TBC) {
-    respuesta += `TBC:\n<${guia.TBC}>\n\n`;
+    respuesta += `**World of Warcraft: The Burning Crusade:**\n<${guia.TBC}>\n\n`;
   }
 
   if (guia.LK) {
-    respuesta += `WotLK:\n<${guia.LK}>\n\n`;
+    respuesta += `**World of Warcraft: Wrath of the Lich King:**\n<${guia.LK}>\n\n`;
   }
 
   respuesta += '**Ten en cuenta que el enlace es solo una referencia del equipo (Pre-BiS/BiS).**';
