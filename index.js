@@ -53,6 +53,8 @@ client.on('messageCreate', message => {
       TBC: 'https://wowtbc.gg/bis-list/protection-warrior/',
       LK: 'https://wowtbc.gg/wotlk/bis-list/protection-warrior/'
     }
+  }; // ✅ AQUÍ SE CIERRA
+
   const comando = msg.replace('!', '');
 
   if (guias[comando]) {
@@ -73,7 +75,7 @@ client.on('messageCreate', message => {
 
     message.reply(respuesta);
   }
-};
+});
 
   'gue-fur': {
     Classic: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=fury',
