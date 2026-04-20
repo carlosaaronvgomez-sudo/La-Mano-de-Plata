@@ -36,11 +36,41 @@ client.on('messageCreate', message => {
   }
 
   // COMANDOS DE CLASES
+ client.on('messageCreate', message => {
+  if (message.author.bot) return;
+
+  const msg = message.content.toLowerCase();
+
+  // COMANDOS DE CLASES (SOLO DATOS)
   const guias = {
-  'gue-pro': {
-    Classic: '<https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=prot'>,
-    TBC: '<https://wowtbc.gg/bis-list/protection-warrior/'>,
-    respuesta += `WotLK:\n<https://wowtbc.gg/wotlk/bis-list/protection-warrior/>\n\n`;
+    'gue-pro': {
+      Classic: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=prot',
+      TBC: 'https://wowtbc.gg/bis-list/protection-warrior/',
+      LK: 'https://wowtbc.gg/wotlk/bis-list/protection-warrior/'
+    }
+  };
+
+  // 👉 LÓGICA (DESPUÉS DEL OBJETO, PERO DENTRO DEL EVENTO)
+  const comando = msg.replace('!', '');
+
+  if (guias[comando]) {
+    const guia = guias[comando];
+    let respuesta = '';
+
+    if (guia.Classic) {
+      respuesta += `Classic:\n<${guia.Classic}>\n\n`;
+    }
+
+    if (guia.TBC) {
+      respuesta += `TBC:\n<${guia.TBC}>\n\n`;
+    }
+
+    if (guia.LK) {
+      respuesta += `WotLK:\n<${guia.LK}>\n\n`;
+    }
+
+    message.reply(respuesta);
+
   },
   'gue-fur': {
     Classic: '<https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=fury'>,
