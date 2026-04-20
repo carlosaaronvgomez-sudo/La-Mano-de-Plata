@@ -42,6 +42,11 @@ client.on('messageCreate', message => {
   const msg = message.content.toLowerCase();
 
   // DATOS
+client.on('messageCreate', message => {
+  if (message.author.bot) return;
+
+  const msg = message.content.toLowerCase();
+
   const guias = {
     'gue-pro': {
       Classic: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=prot',
@@ -50,7 +55,6 @@ client.on('messageCreate', message => {
     }
   };
 
-  // LÓGICA
   const comando = msg.replace('!', '');
 
   if (guias[comando]) {
