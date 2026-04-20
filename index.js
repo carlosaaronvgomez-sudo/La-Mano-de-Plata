@@ -115,13 +115,29 @@ client.on('messageCreate', message => {
 
   };
 
-  if (guias[msg]) {
-    message.reply(
-      `${guias[msg]}\n\n` +
-      'Ten en cuenta que el enlace es solo una referencia del equipo (Pre-BiS/BiS) que deberías buscar. ' +
-      'Adáptalo según la fase en la que te encuentres.'
-    );
+const comando = msg.replace('!', '');
+
+if (guias[comando]) {
+  const guia = guias[comando];
+
+  let respuesta = `**Guías BiS - ${comando.toUpperCase()}**\n\n`;
+
+  if (guia.Classic) {
+    respuesta += `Classic:\n${guia.Classic}\n\n`;
   }
+
+  if (guia.TBC) {
+    respuesta += `TBC:\n${guia.TBC}\n\n`;
+  }
+
+  if (guia.LK) {
+    respuesta += `WotLK:\n${guia.LK}\n\n`;
+  }
+
+  respuesta += 'Ten en cuenta que el enlace es solo una referencia del equipo (Pre-BiS/BiS) que deberías buscar. Adáptalo según la fase en la que te encuentres.';
+
+  message.reply(respuesta);
+}
 
 });
 
