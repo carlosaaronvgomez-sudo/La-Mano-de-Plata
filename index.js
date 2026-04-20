@@ -38,18 +38,18 @@ client.on('messageCreate', message => {
   // COMANDOS DE CLASES
   const guias = {
   'gue-pro': {
-    Classic: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=prot',
-    TBC: 'https://wowtbc.gg/bis-list/protection-warrior/',
-    LK: 'https://wowtbc.gg/wotlk/bis-list/protection-warrior/'
+    Classic: '<https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=prot'>,
+    TBC: '<https://wowtbc.gg/bis-list/protection-warrior/'>,
+    respuesta += `WotLK:\n<https://wowtbc.gg/wotlk/bis-list/protection-warrior/>\n\n`;
   },
   'gue-fur': {
-    Classic: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=fury',
-    TBC: 'https://wowtbc.gg/bis-list/fury-warrior/',
-    LK: 'https://wowtbc.gg/wotlk/bis-list/fury-warrior/'
+    Classic: '<https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=fury'>,
+    TBC: '<https://wowtbc.gg/bis-list/fury-warrior/'>,
+    LK: '<https://wowtbc.gg/wotlk/bis-list/fury-warrior/>'
   },
   'gue-arm': {
-    TBC: 'https://wowtbc.gg/bis-list/arms-warrior/',
-    LK: 'https://wowtbc.gg/wotlk/bis-list/arms-warrior/'
+    TBC: '<https://wowtbc.gg/bis-list/arms-warrior/'>,
+    LK: '<https://wowtbc.gg/wotlk/bis-list/arms-warrior/>'
   },
     'cl-bru': 'https://www.wowisclassic.com/en/best-in-slot/warlock/?phase=1&specialization=warlock',
     'tbc-bru-afli': 'https://wowtbc.gg/bis-list/affliction-warlock/',
@@ -134,7 +134,7 @@ if (guias[comando]) {
     respuesta += `WotLK:\n${guia.LK}\n\n`;
   }
 
-  respuesta += 'Ten en cuenta que el enlace es solo una referencia del equipo (Pre-BiS/BiS) que deberías buscar. Adáptalo según la fase en la que te encuentres.';
+  respuesta += '\n\n**Ten en cuenta que el enlace es solo una referencia del equipo (Pre-BiS/BiS) que deberías buscar. Adáptalo según la fase en la que te encuentres**';
 
   message.reply(respuesta);
 }
