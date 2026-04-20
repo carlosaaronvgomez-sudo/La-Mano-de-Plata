@@ -41,7 +41,7 @@ client.on('messageCreate', message => {
 
   const msg = message.content.toLowerCase();
 
-  // COMANDOS DE CLASES (SOLO DATOS)
+  // DATOS
   const guias = {
     'gue-pro': {
       Classic: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=prot',
@@ -50,7 +50,7 @@ client.on('messageCreate', message => {
     }
   };
 
-  // 👉 LÓGICA (DESPUÉS DEL OBJETO, PERO DENTRO DEL EVENTO)
+  // LÓGICA
   const comando = msg.replace('!', '');
 
   if (guias[comando]) {
@@ -70,17 +70,19 @@ client.on('messageCreate', message => {
     }
 
     message.reply(respuesta);
+  }
+});
 
-  },
   'gue-fur': {
-    Classic: '<https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=fury'>,
-    TBC: '<https://wowtbc.gg/bis-list/fury-warrior/'>,
-    LK: '<https://wowtbc.gg/wotlk/bis-list/fury-warrior/>'
+    Classic: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=fury',
+    TBC: 'https://wowtbc.gg/bis-list/fury-warrior/',
+    LK: 'https://wowtbc.gg/wotlk/bis-list/fury-warrior/'
   },
   'gue-arm': {
-    TBC: '<https://wowtbc.gg/bis-list/arms-warrior/'>,
-    LK: '<https://wowtbc.gg/wotlk/bis-list/arms-warrior/>'
-  },
+    TBC: 'https://wowtbc.gg/bis-list/arms-warrior/',
+    LK: 'https://wowtbc.gg/wotlk/bis-list/arms-warrior/'
+   
+ },
     'cl-bru': 'https://www.wowisclassic.com/en/best-in-slot/warlock/?phase=1&specialization=warlock',
     'tbc-bru-afli': 'https://wowtbc.gg/bis-list/affliction-warlock/',
     'tbc-bru-demo': 'https://wowtbc.gg/bis-list/demonology-warlock/',
