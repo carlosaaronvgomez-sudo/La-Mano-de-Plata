@@ -50,7 +50,7 @@ client.on('messageCreate', message => {
   'gue-arm': {
     TBC: 'https://wowtbc.gg/bis-list/arms-warrior/',
     LK: 'https://wowtbc.gg/wotlk/bis-list/arms-warrior/'
-  }
+  },
     '!cl-bru': 'https://www.wowisclassic.com/en/best-in-slot/warlock/?phase=1&specialization=warlock',
     '!tbc-bru-afli': 'https://wowtbc.gg/bis-list/affliction-warlock/',
     '!tbc-bru-demo': 'https://wowtbc.gg/bis-list/demonology-warlock/',
