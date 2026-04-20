@@ -193,7 +193,7 @@ client.on('messageCreate', message => {
     respuesta += `**World of Warcraft: Wrath of the Lich King:**\n<${guia.LK}>\n\n`;
   }
 
-  respuesta += '**Ten en cuenta que el enlace es solo una referencia del equipo (Pre-BiS/BiS).**';
+  respuesta += '**Ten en cuenta que el enlace es solo una referencia del equipo (Pre-BiS/BiS); ajústalo según la fase y tu progreso.**';
 
   message.reply(respuesta);
 });
