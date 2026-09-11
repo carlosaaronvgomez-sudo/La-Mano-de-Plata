@@ -16,12 +16,12 @@ client.once('ready', () => {
 // 🔹 DATOS (FUERA)
 const guias = {
      // GUERRERO
-    'guerroprote': {
+    'gue-prote': {
       Classic: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=prot',
       TBC: 'https://wowtbc.gg/bis-list/protection-warrior/',
       LK: 'https://wowtbc.gg/wotlk/bis-list/protection-warrior/'
      },
-    '!guefur': {
+    'gue-fur': {
       Classic: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=fury',
       TBC: 'https://wowtbc.gg/bis-list/fury-warrior/',
       LK: 'https://wowtbc.gg/wotlk/bis-list/fury-warrior/'
