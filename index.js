@@ -22,7 +22,7 @@ const guias = {
     LK: 'https://wowtbc.gg/wotlk/bis-list/protection-warrior/'
   },
 
-  'gue-fur': {
+  'gue-furia': {
     Classic: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=fury',
     TBC: 'https://wowtbc.gg/bis-list/fury-warrior/',
     LK: 'https://wowtbc.gg/wotlk/bis-list/fury-warrior/'
