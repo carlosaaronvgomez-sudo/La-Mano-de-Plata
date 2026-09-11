@@ -1,7 +1,7 @@
 const { Client, GatewayIntentBits } = require('discord.js');
 const express = require("express");
 
-const client = new Client({
+const client = new Client({z
   intents: [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
@@ -16,7 +16,7 @@ client.once('ready', () => {
 // 🔹 DATOS (FUERA)
 const guias = {
      // GUERRERO
-    '!gueprote': {
+    '!guerroprote': {
       Classic: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=prot',
       TBC: 'https://wowtbc.gg/bis-list/protection-warrior/',
       LK: 'https://wowtbc.gg/wotlk/bis-list/protection-warrior/'
