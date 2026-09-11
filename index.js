@@ -1,14 +1,13 @@
 const { Client, GatewayIntentBits } = require('discord.js');
 const express = require("express");
 
-const client = new Client({z
+const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent
   ]
 });
-
 client.once('ready', () => {
   console.log(`Bot conectado como ${client.user.tag}`);
 });
