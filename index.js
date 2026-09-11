@@ -15,21 +15,23 @@ client.once('ready', () => {
 
 // 🔹 DATOS (FUERA)
 const guias = {
-     // GUERRERO
-    'gue-prote': {
-      Classic: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=prot',
-      TBC: 'https://wowtbc.gg/bis-list/protection-warrior/',
-      LK: 'https://wowtbc.gg/wotlk/bis-list/protection-warrior/'
-     },
-    'gue-fur': {
-      Classic: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=fury',
-      TBC: 'https://wowtbc.gg/bis-list/fury-warrior/',
-      LK: 'https://wowtbc.gg/wotlk/bis-list/fury-warrior/'
-    },
-   'gue-arm': {
-      TBC: 'https://wowtbc.gg/bis-list/arms-warrior/',
-      LK: 'https://wowtbc.gg/wotlk/bis-list/arms-warrior/'
-      },
+  // GUERRERO
+  'gue-prote': {
+    Classic: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=prot',
+    TBC: 'https://wowtbc.gg/bis-list/protection-warrior/',
+    LK: 'https://wowtbc.gg/wotlk/bis-list/protection-warrior/'
+  },
+
+  'gue-fur': {
+    Classic: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=fury',
+    TBC: 'https://wowtbc.gg/bis-list/fury-warrior/',
+    LK: 'https://wowtbc.gg/wotlk/bis-list/fury-warrior/'
+  },
+
+  'gue-arm': {
+    TBC: 'https://wowtbc.gg/bis-list/arms-warrior/',
+    LK: 'https://wowtbc.gg/wotlk/bis-list/arms-warrior/'
+  },
   // BRUJO
   'bru-cl': {
     Classic: 'https://www.wowisclassic.com/en/best-in-slot/warlock/?phase=1&specialization=warlock'
