@@ -152,27 +152,27 @@ const guias = {
   'LK': 'https://wowtbc.gg/wotlk/bis-list/feral-dps-druid/',
   },
   'dru-equilibrio': {
-  'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/druid/?phase=1&specialization=balance',
-  'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/feral-dps-druid/',
-  'TBC': 'https://wowtbc.gg/bis-list/balance-druid/',
-  'LK': 'https://wowtbc.gg/wotlk/bis-list/balance-druid/',
+  Classic Opcion 1: 'https://www.wowisclassic.com/en/best-in-slot/druid/?phase=1&specialization=balance',
+  Classic Opcion 2: 'https://wowtbc.gg/classic/bis-list/feral-dps-druid/',
+  TBC: 'https://wowtbc.gg/bis-list/balance-druid/',
+  LK: 'https://wowtbc.gg/wotlk/bis-list/balance-druid/',
   },
   'dru-restauracion': {
-  'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/druid/?phase=1&specialization=resto',
-  'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/restoration-druid/',
-  'TBC': 'https://wowtbc.gg/bis-list/restoration-druid/',
-  'LK': 'https://wowtbc.gg/wotlk/bis-list/restoration-druid/',
+  Classic Opcion 1: 'https://www.wowisclassic.com/en/best-in-slot/druid/?phase=1&specialization=resto',
+  Classic Opcion 2: 'https://wowtbc.gg/classic/bis-list/restoration-druid/',
+  TBC: 'https://wowtbc.gg/bis-list/restoration-druid/',
+  LK: 'https://wowtbc.gg/wotlk/bis-list/restoration-druid/',
   },
   //CAZADOR
   'caza-punteria': {
-  'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/hunter/?phase=1&specialization=hunter',
-  'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/marksmanship-hunter/',
-  'TBC': 'https://wowtbc.gg/bis-list/marksmanship-hunter/',
-  'LK': 'https://wowtbc.gg/wotlk/bis-list/marksmanship-hunter/',
+  Classic Opcion 1: 'https://www.wowisclassic.com/en/best-in-slot/hunter/?phase=1&specialization=hunter',
+  Classic Opcion 2: 'https://wowtbc.gg/classic/bis-list/marksmanship-hunter/',
+  TBC: 'https://wowtbc.gg/bis-list/marksmanship-hunter/',
+  LK: 'https://wowtbc.gg/wotlk/bis-list/marksmanship-hunter/',
   },
   'caza-bestias': {
-  'TBC': 'https://wowtbc.gg/bis-list/beast-mastery-hunter/',
-  'LK': 'https://wowtbc.gg/wotlk/bis-list/beast-mastery-hunter/',
+  TBC: 'https://wowtbc.gg/bis-list/beast-mastery-hunter/',
+  LK: 'https://wowtbc.gg/wotlk/bis-list/beast-mastery-hunter/',
   },
   'caza-supervivencia': {
   TBC: 'https://wowtbc.gg/bis-list/survival-hunter/',
@@ -180,13 +180,13 @@ const guias = {
   }
    //CABALLERO DE LA MUERTE 
   'dk-sangre': {
-  'LK': 'https://wowtbc.gg/wotlk/bis-list/blood-tank-death-knight/',
+  LK: 'https://wowtbc.gg/wotlk/bis-list/blood-tank-death-knight/',
   },
   'dk-escar': {
-  'LK': 'https://wowtbc.gg/wotlk/bis-list/frost-death-knight/',
+  LK: 'https://wowtbc.gg/wotlk/bis-list/frost-death-knight/',
   },
   'dk-profa': {
-  'LK': 'https://wowtbc.gg/wotlk/bis-list/unholy-death-knight/',
+  LK: 'https://wowtbc.gg/wotlk/bis-list/unholy-death-knight/',
   }
   };  
 // 🔹 UN SOLO EVENTO
