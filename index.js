@@ -174,7 +174,7 @@ const guias = {
   'TBC': 'https://wowtbc.gg/bis-list/beast-mastery-hunter/',
   'LK': 'https://wowtbc.gg/wotlk/bis-list/beast-mastery-hunter/',
   },
-  'caza-supervivencia: {
+  'caza-supervivencia': {
   TBC: 'https://wowtbc.gg/bis-list/survival-hunter/',
   LK: 'https://wowtbc.gg/wotlk/bis-list/survival-hunter/',
   }
