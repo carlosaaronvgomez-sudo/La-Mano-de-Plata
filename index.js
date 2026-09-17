@@ -130,8 +130,8 @@ const guias = {
   'mag-escarcha': {
   'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/mage/?phase=1',
   'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/frost-mage/',
-  'TBC: 'https://wowtbc.gg/bis-list/frost-mage/',
-  'LK: 'https://wowtbc.gg/wotlk/bis-list/frost-mage/',
+  'TBC': 'https://wowtbc.gg/bis-list/frost-mage/',
+  'LK': 'https://wowtbc.gg/wotlk/bis-list/frost-mage/',
   },
   'mag-fuego': {
   'Classic': 'https://wowtbc.gg/classic/bis-list/fire-mage/',
