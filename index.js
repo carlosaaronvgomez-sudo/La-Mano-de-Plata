@@ -175,8 +175,8 @@ const guias = {
   'LK': 'https://wowtbc.gg/wotlk/bis-list/beast-mastery-hunter/',
   },
   'caza-supervivencia: {
-  'TBC': 'https://wowtbc.gg/bis-list/survival-hunter/',
-  'LK': 'https://wowtbc.gg/wotlk/bis-list/survival-hunter/',
+  TBC: 'https://wowtbc.gg/bis-list/survival-hunter/',
+  LK: 'https://wowtbc.gg/wotlk/bis-list/survival-hunter/',
   }
    //CABALLERO DE LA MUERTE 
   'dk-sangre': {
