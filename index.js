@@ -65,7 +65,7 @@ const guias = {
     'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/shaman/?phase=1&specialization=enhan',
     'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/enhancement-shaman/',
     TBC: 'https://wowtbc.gg/bis-list/enhancement-shaman/',
-    K: 'https://wowtbc.gg/wotlk/bis-list/enhancement-shaman/'
+    LK: 'https://wowtbc.gg/wotlk/bis-list/enhancement-shaman/'
   },
     // SACERDOTE
   'sac-sagrado': {
@@ -125,7 +125,7 @@ const guias = {
   'mag-arcano': {
   Classic: 'https://wowtbc.gg/classic/bis-list/arcane-mage/',
   TBC: 'https://wowtbc.gg/bis-list/arcane-mage/',
-  LK' 'https://wowtbc.gg/wotlk/bis-list/arcane-mage/'
+  LK: 'https://wowtbc.gg/wotlk/bis-list/arcane-mage/'
   },
   'mag-escarcha': {
   'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/mage/?phase=1',
@@ -177,15 +177,15 @@ const guias = {
   'caza-supervivencia': {
   TBC: 'https://wowtbc.gg/bis-list/survival-hunter/',
   LK: 'https://wowtbc.gg/wotlk/bis-list/survival-hunter/',
-  }
+  },
    //CABALLERO DE LA MUERTE 
   'dk-sangre': {
   LK: 'https://wowtbc.gg/wotlk/bis-list/blood-tank-death-knight/',
   },
-  'dk-escar': {
+  'dk-escarcha': {
   LK: 'https://wowtbc.gg/wotlk/bis-list/frost-death-knight/',
   },
-  'dk-profa': {
+  'dk-profano': {
   LK: 'https://wowtbc.gg/wotlk/bis-list/unholy-death-knight/',
   }
   };  
