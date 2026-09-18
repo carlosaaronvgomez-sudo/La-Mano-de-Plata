@@ -212,17 +212,25 @@ client.on('messageCreate', message => {
   const guia = guias[comando];
   let respuesta = '';
 
-  if (guia.Classic) {
-    respuesta += `**World of Warcraft Classic:**\n<${guia.Classic}>\n\n`;
-  }
+ if (guia.Classic) {
+  respuesta += `**World of Warcraft Classic:**\n${guia.Classic}\n\n`;
+}
 
-  if (guia.TBC) {
-    respuesta += `**World of Warcraft: The Burning Crusade:**\n<${guia.TBC}>\n\n`;
-  }
+if (guia['Classic Opcion 1']) {
+  respuesta += `**World of Warcraft Classic - Opción 1:**\n${guia['Classic Opcion 1']}\n\n`;
+}
 
-  if (guia.LK) {
-    respuesta += `**World of Warcraft: Wrath of the Lich King:**\n<${guia.LK}>\n\n`;
-  }
+if (guia['Classic Opcion 2']) {
+  respuesta += `**World of Warcraft Classic - Opción 2:**\n${guia['Classic Opcion 2']}\n\n`;
+}
+
+if (guia.TBC) {
+  respuesta += `**World of Warcraft: The Burning Crusade:**\n${guia.TBC}\n\n`;
+}
+
+if (guia.LK) {
+  respuesta += `**World of Warcraft: Wrath of the Lich King:**\n${guia.LK}\n\n`;
+}
 
   respuesta += '**Ten en cuenta que el enlace es solo una referencia del equipo (Pre-BiS/BiS); ajústalo según la fase y tu progreso.**';
 
