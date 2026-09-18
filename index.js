@@ -16,32 +16,32 @@ client.once('ready', () => {
 const guias = {
   // GUERRERO
   'gue-protecion': {
-    'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=prot',
-    'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/fury-protection-warrior/',
-    'TBC': 'https://wowtbc.gg/bis-list/protection-warrior/',
-    'LK': 'https://wowtbc.gg/wotlk/bis-list/protection-warrior/'
+    Classic Opcion 1: 'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=prot',
+    Classic Opcion 2: 'https://wowtbc.gg/classic/bis-list/fury-protection-warrior/',
+    TBC: 'https://wowtbc.gg/bis-list/protection-warrior/',
+    LK: 'https://wowtbc.gg/wotlk/bis-list/protection-warrior/'
   },
 
   'gue-furia': {
-    'Classic Opcion 1':'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=fury',
-    'Classic Opcion 2':'https://wowtbc.gg/classic/bis-list/fury-warrior/',
-    'TBC': 'https://wowtbc.gg/bis-list/fury-warrior/',
-    'LK': 'https://wowtbc.gg/wotlk/bis-list/fury-warrior/'
+    Classic Opcion 1:'https://www.wowisclassic.com/en/best-in-slot/warrior/?phase=1&specialization=fury',
+    Classic Opcion 2:'https://wowtbc.gg/classic/bis-list/fury-warrior/',
+    TBC: 'https://wowtbc.gg/bis-list/fury-warrior/',
+    LK: 'https://wowtbc.gg/wotlk/bis-list/fury-warrior/'
   },
 
   'gue-armas': {
-    'TBC': 'https://wowtbc.gg/bis-list/arms-warrior/',
-    'LK': 'https://wowtbc.gg/wotlk/bis-list/arms-warrior/'
+    TBC: 'https://wowtbc.gg/bis-list/arms-warrior/',
+    LK: 'https://wowtbc.gg/wotlk/bis-list/arms-warrior/'
   },
   // BRUJO
   'bru-afliccion': {
-    'Classic': 'https://wowtbc.gg/classic/bis-list/affliction-warlock/',
-   'TBC': 'https://wowtbc.gg/bis-list/affliction-warlock/',
-    'LK': 'https://wowtbc.gg/wotlk/bis-list/affliction-warlock/'
+    Classic: 'https://wowtbc.gg/classic/bis-list/affliction-warlock/',
+   TBC: 'https://wowtbc.gg/bis-list/affliction-warlock/',
+    LK: 'https://wowtbc.gg/wotlk/bis-list/affliction-warlock/'
   },
   'bru-demonologia': {
-    'TBC': 'https://wowtbc.gg/bis-list/demonology-warlock/',
-    'LK': 'https://wowtbc.gg/wotlk/bis-list/demonology-warlock/'
+    TBC: 'https://wowtbc.gg/bis-list/demonology-warlock/',
+    LK: 'https://wowtbc.gg/wotlk/bis-list/demonology-warlock/'
   },
   'bru-destruccion': {
     'Classic': 'https://wowtbc.gg/classic/bis-list/destruction-warlock/',
@@ -50,106 +50,106 @@ const guias = {
   },
  // CHAMÁN
   'cha-elemental': {
-    'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/shaman/?phase=1&specialization=elem',
-    'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/elemental-shaman/',
-    'TBC': 'https://wowtbc.gg/bis-list/elemental-shaman/',
-    'LK': 'https://wowtbc.gg/wotlk/bis-list/elemental-shaman/'
+    Classic Opcion 1: 'https://www.wowisclassic.com/en/best-in-slot/shaman/?phase=1&specialization=elem',
+    Classic Opcion 2: 'https://wowtbc.gg/classic/bis-list/elemental-shaman/',
+    TBC: 'https://wowtbc.gg/bis-list/elemental-shaman/',
+    LK: 'https://wowtbc.gg/wotlk/bis-list/elemental-shaman/'
   },
   'cha-restauracion': {
-    'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/shaman/?phase=1&specialization=resto',
-    'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/restoration-shaman/',
-    'TBC': 'https://wowtbc.gg/bis-list/restoration-shaman/',
-    'LK': 'https://wowtbc.gg/wotlk/bis-list/restoration-shaman/'
+    Classic Opcion 1: 'https://www.wowisclassic.com/en/best-in-slot/shaman/?phase=1&specialization=resto',
+    Classic Opcion 2: 'https://wowtbc.gg/classic/bis-list/restoration-shaman/',
+    TBC: 'https://wowtbc.gg/bis-list/restoration-shaman/',
+    LK: 'https://wowtbc.gg/wotlk/bis-list/restoration-shaman/'
   },
   'cha-mejora': {
-    'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/shaman/?phase=1&specialization=enhan',
-    'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/enhancement-shaman/',
-    'TBC': 'https://wowtbc.gg/bis-list/enhancement-shaman/',
-    'LK': 'https://wowtbc.gg/wotlk/bis-list/enhancement-shaman/'
+    Classic Opcion 1: 'https://www.wowisclassic.com/en/best-in-slot/shaman/?phase=1&specialization=enhan',
+    Classic Opcion 2: 'https://wowtbc.gg/classic/bis-list/enhancement-shaman/',
+    TBC: 'https://wowtbc.gg/bis-list/enhancement-shaman/',
+    K: 'https://wowtbc.gg/wotlk/bis-list/enhancement-shaman/'
   },
     // SACERDOTE
   'sac-sagrado': {
-    'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/priest/?phase=1&specialization=holy',
-    'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/holy-priest/',
-    'TBC': 'https://wowtbc.gg/bis-list/holy-priest/',
-    'LK': 'https://wowtbc.gg/wotlk/bis-list/holy-priest/'
+    Classic Opcion 1: 'https://www.wowisclassic.com/en/best-in-slot/priest/?phase=1&specialization=holy',
+    Classic Opcion 2: 'https://wowtbc.gg/classic/bis-list/holy-priest/',
+    TBC: 'https://wowtbc.gg/bis-list/holy-priest/',
+    LK: 'https://wowtbc.gg/wotlk/bis-list/holy-priest/'
   },
   'sac-sombras': {
-    'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/priest/?phase=1&specialization=shadow',
-    'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/shadow-priest/',
-    'TBC': 'https://wowtbc.gg/bis-list/shadow-priest/',
-    'LK': 'https://wowtbc.gg/wotlk/bis-list/shadow-priest/'
+    Classic Opcion 1: 'https://www.wowisclassic.com/en/best-in-slot/priest/?phase=1&specialization=shadow',
+    Classic Opcion 2: 'https://wowtbc.gg/classic/bis-list/shadow-priest/',
+    TBC: 'https://wowtbc.gg/bis-list/shadow-priest/',
+    LK: 'https://wowtbc.gg/wotlk/bis-list/shadow-priest/'
   },
   'sac-disciplina': {
-  'LK': 'https://wowtbc.gg/wotlk/bis-list/discipline-priest/'
+  LK: 'https://wowtbc.gg/wotlk/bis-list/discipline-priest/'
   },
   // PALADÍN
   'pal-protecion': {
-    'Classic': 'https://www.wowisclassic.com/en/best-in-slot/paladin/?phase=1&specialization=protection',
-    'TBC': 'https://wowtbc.gg/bis-list/protection-paladin/',
-    'LK': 'https://wowtbc.gg/wotlk/bis-list/protection-paladin/'
+    Classic: 'https://www.wowisclassic.com/en/best-in-slot/paladin/?phase=1&specialization=protection',
+    TBC: 'https://wowtbc.gg/bis-list/protection-paladin/',
+    LK: 'https://wowtbc.gg/wotlk/bis-list/protection-paladin/'
   },
    'pal-retribucion': {
-    'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/paladin/?phase=1&specialization=ret',
-    'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/retribution-paladin/',
-    'TBC': 'https://wowtbc.gg/bis-list/retribution-paladin/',
-    'LK': 'https://wowtbc.gg/wotlk/bis-list/retribution-paladin/',
+    Classic Opcion 1: 'https://www.wowisclassic.com/en/best-in-slot/paladin/?phase=1&specialization=ret',
+    Classic Opcion 2: 'https://wowtbc.gg/classic/bis-list/retribution-paladin/',
+    TBC: 'https://wowtbc.gg/bis-list/retribution-paladin/',
+    LK: 'https://wowtbc.gg/wotlk/bis-list/retribution-paladin/',
    },
    'pal-sagrado': {
-   'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/paladin/?phase=1&specialization=heal',
-   'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/holy-paladin/',
-   'TBC': 'https://wowtbc.gg/bis-list/holy-paladin/',
-   'LK': 'https://wowtbc.gg/wotlk/bis-list/holy-paladin/',
+   Classic Opcion 1: 'https://www.wowisclassic.com/en/best-in-slot/paladin/?phase=1&specialization=heal',
+   Classic Opcion 2: 'https://wowtbc.gg/classic/bis-list/holy-paladin/',
+   TBC: 'https://wowtbc.gg/bis-list/holy-paladin/',
+   LK: 'https://wowtbc.gg/wotlk/bis-list/holy-paladin/',
   },
   // PÍCARO
   'pica-dagas': {
-  'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/rogue/?phase=1&specialization=dagger',
-  'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/combat-daggers-rogue/',
+  Classic Opcion 1: 'https://www.wowisclassic.com/en/best-in-slot/rogue/?phase=1&specialization=dagger',
+  Classic Opcion 2: 'https://wowtbc.gg/classic/bis-list/combat-daggers-rogue/',
   }, 
   'pica-espadas': {
-  'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/rogue/?phase=1&specialization=sword',
-  'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/combat-rogue/',
+  Classic Opcion 1: 'https://www.wowisclassic.com/en/best-in-slot/rogue/?phase=1&specialization=sword',
+  Classic Opcion 2: 'https://wowtbc.gg/classic/bis-list/combat-rogue/',
   },
   'pica-combate': {
   TBC: 'https://wowtbc.gg/bis-list/combat-rogue/',
   LK: 'https://wowtbc.gg/wotlk/bis-list/combat-rogue/'
   },
   'pica-asesi': {
-  'TBC': 'https://wowtbc.gg/bis-list/assassination-rogue/',
-  'LK': 'https://wowtbc.gg/wotlk/bis-list/assassination-rogue/'
+  TBC: 'https://wowtbc.gg/bis-list/assassination-rogue/',
+  LK: 'https://wowtbc.gg/wotlk/bis-list/assassination-rogue/'
   },
   'pica-sutileza': {
-   'TBC': 'https://wowtbc.gg/bis-list/subtlety-rogue/',
+   TBC: 'https://wowtbc.gg/bis-list/subtlety-rogue/',
   },
   // MAGO
   'mag-arcano': {
-  'Classic': 'https://wowtbc.gg/classic/bis-list/arcane-mage/',
-  'TBC': 'https://wowtbc.gg/bis-list/arcane-mage/',
-  'LK': 'https://wowtbc.gg/wotlk/bis-list/arcane-mage/'
+  Classic: 'https://wowtbc.gg/classic/bis-list/arcane-mage/',
+  TBC: 'https://wowtbc.gg/bis-list/arcane-mage/',
+  LK' 'https://wowtbc.gg/wotlk/bis-list/arcane-mage/'
   },
   'mag-escarcha': {
-  'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/mage/?phase=1',
-  'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/frost-mage/',
-  'TBC': 'https://wowtbc.gg/bis-list/frost-mage/',
-  'LK': 'https://wowtbc.gg/wotlk/bis-list/frost-mage/',
+  Classic Opcion 1: 'https://www.wowisclassic.com/en/best-in-slot/mage/?phase=1',
+  Classic Opcion 2: 'https://wowtbc.gg/classic/bis-list/frost-mage/',
+  TBC: 'https://wowtbc.gg/bis-list/frost-mage/',
+  LK: 'https://wowtbc.gg/wotlk/bis-list/frost-mage/',
   },
   'mag-fuego': {
-  'Classic': 'https://wowtbc.gg/classic/bis-list/fire-mage/',
-  'TBC': 'https://wowtbc.gg/bis-list/fire-mage/',
-  'LK': 'https://wowtbc.gg/wotlk/bis-list/fire-mage/',
+  Classic: 'https://wowtbc.gg/classic/bis-list/fire-mage/',
+  TBC: 'https://wowtbc.gg/bis-list/fire-mage/',
+  LK: 'https://wowtbc.gg/wotlk/bis-list/fire-mage/',
   },
   // DRUIDA
   'dru-oso': {
-  'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/druid/?phase=1&specialization=tank',
-  'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/feral-tank-druid/',
-  'TBC': 'https://wowtbc.gg/bis-list/feral-tank-druid/',
-  'LK': 'https://wowtbc.gg/wotlk/bis-list/feral-tank-druid/',
+  Classic Opcion 1: 'https://www.wowisclassic.com/en/best-in-slot/druid/?phase=1&specialization=tank',
+  Classic Opcion 2: 'https://wowtbc.gg/classic/bis-list/feral-tank-druid/',
+  TBC: 'https://wowtbc.gg/bis-list/feral-tank-druid/',
+  LK: 'https://wowtbc.gg/wotlk/bis-list/feral-tank-druid/',
   },
   'dru-gato': {
-  'Classic Opcion 1': 'https://www.wowisclassic.com/en/best-in-slot/druid/?phase=1&specialization=cat',
-  'Classic Opcion 2': 'https://wowtbc.gg/classic/bis-list/feral-dps-druid/',
-  'TBC': 'https://wowtbc.gg/bis-list/feral-dps-druid/',
-  'LK': 'https://wowtbc.gg/wotlk/bis-list/feral-dps-druid/',
+  Classic Opcion 1: 'https://www.wowisclassic.com/en/best-in-slot/druid/?phase=1&specialization=cat',
+  Classic Opcion 2: 'https://wowtbc.gg/classic/bis-list/feral-dps-druid/',
+  TBC: 'https://wowtbc.gg/bis-list/feral-dps-druid/',
+  LK: 'https://wowtbc.gg/wotlk/bis-list/feral-dps-druid/',
   },
   'dru-equilibrio': {
   Classic Opcion 1: 'https://www.wowisclassic.com/en/best-in-slot/druid/?phase=1&specialization=balance',
